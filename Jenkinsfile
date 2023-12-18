@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'dev', url: 'https://github.com/KhajaWorkshopsAtQT/Dec1623.git'
+                git branch: 'dev', url: 'https://github.com/Maheshp70/jenkinsworkshopDec2023.git'
             }
         }
         stage('Build docker image') {
