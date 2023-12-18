@@ -46,7 +46,7 @@ pipeline {
         stage('kubescape Scan') {
             steps {
                 script {
-                    sh "/home/ubuntu/.kubescape/bin/kubescape scan -t 40 deployment/k8s/deployment.yaml --format junit -o TEST-report.xml"
+                    sh "/home/gcp/snap/kubescape scan -t 40 deployment/k8s/deployment.yaml --format junit -o TEST-report.xml"
                     junit "**/TEST-*.xml"
                 }
                 
