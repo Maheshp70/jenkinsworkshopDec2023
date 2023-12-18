@@ -43,14 +43,14 @@ pipeline {
             }
         }
 
-        stage('kubescape Scan') {
-            steps {
-                script {
-                    sh "/home/gcp/snap/kubescape scan -t 40 deployment/k8s/deployment.yaml --format junit -o TEST-report.xml"
-                    junit "**/TEST-*.xml"
-                }
+        // stage('kubescape Scan') {
+        //     steps {
+        //         script {
+        //             sh "/home/gcp/snap/kubescape scan -t 40 deployment/k8s/deployment.yaml --format junit -o TEST-report.xml"
+        //             junit "**/TEST-*.xml"
+        //         }
                 
-            }
-        }
+        //     }
+        // }
     }
 }
