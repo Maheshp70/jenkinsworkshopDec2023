@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'docker' }
+    agent { label 'Docker' }
     stages {
         stage('clean workspace'){
             steps{
